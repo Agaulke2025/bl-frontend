@@ -1,8 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Plan from './pages/Plan';
-import Ticks from './pages/Ticks';
-import SignUp from './pages/SignUp';
+import Trips from './pages/Trips';
+import LogIn from './pages/LoginIn';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import { GlobalStyles } from './styles/Global.style';
@@ -14,8 +14,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />}/>
       <Route path="/plan" element={<Plan />}/>
-      <Route path="/ticks" element={<Ticks />}/>
-      <Route path="/signup" element={<SignUp />}/>
+      <Route path="/trips" element={<Trips />}/>
+      <Route path="/login" element={<LogIn />}/>
     </Routes>
     <GlobalStyles />
   </Router>

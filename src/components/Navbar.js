@@ -1,17 +1,32 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Logo from '../components/Logo'
 import { NavbarWrapper, NavLinkWrapper, StyledNavLink, StyledFontAwesomeIcon } from '../styles/Navbar.style'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => {
+  const [fix, setFix] = useState(false);
   const [active, setActive] = useState(false);
   const links = [
     {page: 'Home', href: '/'},
     {page: 'Plan', href: '/plan'},
-    {page: 'Ticks', href: '/ticks'},
-    {page: 'Sign Up', href: '/signup'}]
+    {page: 'Trips', href: '/trips'},
+    {page: 'Log in', href: '/log in'}]
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setFix(true)
+      } else {
+        setFix(false)
+      }
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
   return (
-    <NavbarWrapper>
+    <NavbarWrapper className={fix ? 'fixed' : ''}>
       <Logo />
       <StyledFontAwesomeIcon icon={faBars} onClick={() => setActive(!active)}/>
       <NavLinkWrapper active={active}>

@@ -16,6 +16,12 @@ const NavbarWrapper = styled.nav`
   background-color: lightblue;
   padding: 0rem 2rem;
   position: relative;
+  transition: all 0.2s ease;
+  &.fixed {
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
   @media (max-width: 704px) {
     flex-direction: column;
     padding: 1rem;
