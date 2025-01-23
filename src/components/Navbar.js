@@ -10,7 +10,7 @@ const Navbar = () => {
     {page: 'Home', href: '/'},
     {page: 'Plan', href: '/plan'},
     {page: 'Trips', href: '/trips'},
-    {page: 'Log in', href: '/log in'}]
+    {page: 'Log in', href: '/login'}]
 
   useEffect(() => {
     const handleScroll = () => {
