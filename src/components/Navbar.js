@@ -12,6 +12,7 @@ const Navbar = () => {
     {page: 'Trips', href: '/trips'},
     {page: 'Log in', href: '/login'}]
 
+  /* This function will make the navbar sticky if a user starts scrolling */
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {

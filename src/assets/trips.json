@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "https://example.com/images/trip1.jpg",
+    "location": "Vienna, Austria",
+    "date": "2025-06-15"
+  },
+  {
+    "id": 2,
+    "image": "https://example.com/images/trip2.jpg",
+    "location": "Innsbruck, Austria",
+    "date": "2025-06-18"
+  },
+  {
+    "id": 3,
+    "image": "https://example.com/images/trip3.jpg",
+    "location": "Salzburg, Austria",
+    "date": "2025-06-22"
+  },
+  {
+    "id": 4,
+    "image": "https://example.com/images/trip4.jpg",
+    "location": "Hallstatt, Austria",
+    "date": "2025-06-25"
+  }
+]
